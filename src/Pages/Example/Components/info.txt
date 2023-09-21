@@ -1,0 +1,1 @@
+In This Folder Only the Component Of This Page(For This Example) Will Create If Component used in this Page Going To Be Global Then It Will Not Add   in This Folder
