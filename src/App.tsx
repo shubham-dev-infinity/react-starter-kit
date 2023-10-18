@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router";
-import Example from "./Pages/Example";
-import Testing from "./Pages/Testing";
 import { Link } from "react-router-dom";
-import './Style/styles.scss'
+import './styles/styles.scss'
+import Example from "pages/example";
+import Testing from "pages/testing";
 function App() {
   return (
     <>

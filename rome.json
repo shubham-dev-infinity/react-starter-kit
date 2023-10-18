@@ -1,0 +1,60 @@
+{
+	"$schema": "./node_modules/rome/configuration_schema.json",
+	"organizeImports": {
+	  "enabled": false
+	},
+	"files": {
+	  "ignore": [
+		"dist/*.*",
+		"coverage",
+		"deploy",
+		"ssl",
+		"node_modules",
+		".do",
+		"__tests__",
+		"src/@types"
+	  ]
+	},
+	"formatter": {
+	  "enabled": true,
+	  "formatWithErrors": false,
+	  "indentStyle": "space",
+	  "indentSize": 2,
+	  "lineWidth": 120
+	},
+	"javascript": {
+	  "formatter": {
+		"quoteStyle": "single"
+	  }
+	},
+	"linter": {
+	  "enabled": true,
+	  "rules": {
+		"recommended": true,
+		"correctness": {
+		  "all": true,
+		  "noUndeclaredVariables": "off"
+		},
+		"suspicious": {
+		  "noExplicitAny": "off",
+		  "noArrayIndexKey": "off"
+		},
+		"style": {
+		  "noArguments": "off"
+		},
+		"a11y": {
+		  "useAltText": "off",
+		  "useKeyWithClickEvents": "off",
+		  "useValidAnchor": "off",
+		  "useAnchorContent": "off",
+		  "noSvgWithoutTitle": "off",
+		  "useIframeTitle": "off",
+		  "useMediaCaption": "off"
+		},
+		"security": {
+		  "noDangerouslySetInnerHtml": "off"
+		}
+	  }
+	}
+  }
+  
