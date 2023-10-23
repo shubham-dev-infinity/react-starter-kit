@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { ApiGet } from "../../HTTP/API/communicate";
+import get from "../../HTTP/API/get";
 
 function Testing() {
     const getUsers = () => {
-        const resposne = ApiGet('test', '/')
+        const resposne = get({ endpoint: '/' })
         console.log(resposne)
     }
     useEffect(() => {
