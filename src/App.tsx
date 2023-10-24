@@ -7,6 +7,7 @@ import Testing from "pages/testing";
 import { eventEmitter } from "utils/eventEmitter.util";
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
+import Routes_ from 'routes';
 
 function App() {
   const dispatch = useDispatch();
@@ -46,10 +47,7 @@ function App() {
         <Link to='/example'>Example</Link>
         <Link to='/testing'>Testing</Link>
       </div>
-      <Routes>
-        <Route path="/example" element={<Example />} />
-        <Route path="/testing" element={<Testing />} />
-      </Routes>
+      <Routes_ />
     </>)
 }
 

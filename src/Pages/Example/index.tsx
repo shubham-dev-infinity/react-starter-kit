@@ -1,6 +1,7 @@
 import Container from "components/container";
 import InputField from "components/form-fiels/input-fields";
 import { useForm, SubmitHandler } from "react-hook-form"
+import { Outlet } from "react-router-dom";
 
 type TForminitialstate = {
     name: string;
@@ -22,6 +23,7 @@ function Example() {
                     <InputField register={register} name="email" type="email" errors={errors} />
                     <button type="submit">submit</button>
                 </form>
+                <Outlet />
             </Container>
         </>
     )
