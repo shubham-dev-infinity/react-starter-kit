@@ -4,7 +4,7 @@ import './styles/styles.scss'
 import { eventEmitter } from "utils/eventEmitter.util";
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
-import Routes_ from 'routes';
+import Routes from 'routes';
 
 function App() {
   const dispatch = useDispatch();
@@ -44,7 +44,7 @@ function App() {
         <Link to='/example'>Example</Link>
         <Link to='/testing'>Testing</Link>
       </div>
-      <Routes_ />
+      <Routes />
     </>)
 }
 

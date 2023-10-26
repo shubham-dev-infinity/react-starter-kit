@@ -13,7 +13,7 @@ const Routes_ = () => {
             {
                 routeData.map((route) => (
                     <Route
-                        // key={route.path}
+                        key={route.path}
                         path={route.path}
                         element={
                             <RouteWrapper
