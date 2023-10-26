@@ -8,9 +8,9 @@ interface getConfiguration {
 }
 
 export default function get_decorators() {
-    let cache_map: MyObject = {};
+    const cache_map: MyObject = {};
 
-    return async function (hash: string, promise: Promise<any>, configuration?: getConfiguration) {
+    return async function (hash: string, promise: Promise<any>, _configuration?: getConfiguration) {
         if (cache_map[hash]) {
             alert("success")
             return cache_map[hash]

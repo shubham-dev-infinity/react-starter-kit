@@ -1,7 +1,6 @@
 import axios from "axios";
 import { TGet, cacheConfig } from "typedefs/cache";
 
-
 const cacheMemory: Map<string, {
     register: Date;
     data: any

@@ -1,19 +1,16 @@
 import { useEffect } from 'react'
-import { Route, Routes } from "react-router";
 import { Link } from "react-router-dom";
 import './styles/styles.scss'
-import Example from "pages/example";
-import Testing from "pages/testing";
 import { eventEmitter } from "utils/eventEmitter.util";
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
-import Routes_ from 'routes';
+import Routes from 'routes';
 
 function App() {
   const dispatch = useDispatch();
 
 
-  //axios middleware to check does i got 502 in response , if yes then need to clear the redux state and uesr need to login again
+  //axios middleware to check does we got 502 in response , if yes then need to clear the redux state and uesr need to login again
   axios.interceptors.response.use(
     function (response) {
       // If the response was successful, just return it
@@ -47,7 +44,7 @@ function App() {
         <Link to='/example'>Example</Link>
         <Link to='/testing'>Testing</Link>
       </div>
-      <Routes_ />
+      <Routes />
     </>)
 }
 

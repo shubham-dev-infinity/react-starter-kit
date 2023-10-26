@@ -1,0 +1,13 @@
+{
+  "extends": ["react-app", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-key": 2,
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
